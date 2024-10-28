@@ -1,6 +1,11 @@
+main .section.two-up.columns-container {
+	padding: 64px 80px;
+}
+
 .columns > div {
   display: flex;
   flex-direction: column;
+
 }
 
 .columns img {
@@ -9,6 +14,27 @@
 
 .columns > div > div {
   order: 1;
+  position: relative;
+}
+
+.columns > div > div > p {
+	margin: 0;
+}
+
+.columns > div > div > p.button-container {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.columns > div > div > p.button-container a {
+	font-family: 'Avenir Next LT W05 Medium', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.08em;
+	color: #FFFFFF;
+	display: inline-block;
 }
 
 .columns > div > .columns-img-col {
@@ -19,11 +45,12 @@
   display: block;
 }
 
+
 @media (width >= 900px) {
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
+    gap: 80px;
   }
 
   .columns > div > div {
